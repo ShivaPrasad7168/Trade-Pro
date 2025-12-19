@@ -82,7 +82,7 @@ const Footer = () => (
           </ul>
         </div>
         <div>
-          <h3 className="font-semibold mb-4 ">Products</h3>
+          <h3 className="font-semibold mb-4 ">Trade Pro</h3>
           <ul className="space-y-2">
             {["About Us", "Pricing", "Blog", "Carrer", "Help and Support"].map(
               (item) => (
@@ -97,7 +97,7 @@ const Footer = () => (
           </ul>
         </div>
         <div>
-          <h3 className="font-semibold mb-4 ">Products</h3>
+          <h3 className="font-semibold mb-4 ">Quick Links</h3>
           <ul className="space-y-2">
             {[
               "Amc Mutual Funds",

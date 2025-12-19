@@ -53,14 +53,24 @@ export default function Header() {
           />
         </div>
 
-        <Bell className="text-gray-300 cursor-pointer hover:text-blue-500" />
-        <ShoppingCart className="text-gray-300 cursor-pointer hover:text-blue-500" />
-        <User className="text-gray-300 cursor-pointer hover:text-blue-500" />
+        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <Bell className="text-gray-300 cursor-pointer hover:text-blue-500" />
+        </motion.div>
+        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <ShoppingCart className="text-gray-300 cursor-pointer hover:text-blue-500" />
+        </motion.div>
+        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <User className="text-gray-300 cursor-pointer hover:text-blue-500" />
+        </motion.div>
 
-        <Menu
-          className="md:hidden text-gray-300 cursor-pointer hover:text-blue-500"
+        <motion.div
+          className="md:hidden"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
           onClick={() => setIsMenuOpen(true)}
-        />
+        >
+          <Menu className="text-gray-300 cursor-pointer hover:text-blue-500" />
+        </motion.div>
       </div>
 
       <AnimatePresence>
